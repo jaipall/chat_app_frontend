@@ -3,7 +3,7 @@ import assets from "../assets/assets";
 
 const LoginPage = () => {
   const [currState, setCurrState] = useState("Sign up");
-  const [fullname, setFullName] = useState("");
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [bio, setBio] = useState("");
@@ -48,7 +48,7 @@ const LoginPage = () => {
         {currState === "Sign up" && !isDataSubmitted && (
           <input
             onChange={(e) => setFullName(e.target.value)}
-            value={fullname}
+            value={fullName}
             type="text"
             className="p-2 border border-gray-500 rounded-md focus:outline-none"
             placeholder="Full Name"
